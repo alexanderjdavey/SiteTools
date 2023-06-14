@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Site Tools - Text to HTML Links</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"> <h1>Site Tools</h1></a>
+      <nav>
+        <ul>
+          <li><a href="htmlurl.html">Text to HTML Links Convertor</a></li>
+          <li><a href="xmlparse.html">Sitemap URL Extractor</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="main">
+      <h2>URL to HTML Link Converter</h2>
+      <textarea
+        id="inputText"
+        rows="5"
+        cols="50"
+        placeholder="Enter plain text URLs here..."
+      ></textarea
+      ><br />
+
+      <h3>Settings</h3>
+      <div class="settings-line">
+        <input
+          type="radio"
+          id="space"
+          name="format"
+          value="space"
+          checked="checked"
+        />
+        <label for="space">Separate by spaces</label>
+      </div>
+      <div class="settings-line">
+        <input type="radio" id="line" name="format" value="line" />
+        <label for="line">Separate by lines</label>
+      </div>
+      <div class="settings-line">
+        <input type="radio" id="br" name="format" value="br" />
+        <label for="br">Separate with a &lt;br&gt;</label>
+      </div>
+      <div class="settings-line">
+        <input type="checkbox" id="div" name="div" />
+        <label for="div">Wrap each URL in a div tag</label>
+      </div>
+      <div class="settings-line">
+        <input type="checkbox" id="list" name="list" />
+        <label for="list">Put all the links in a bullet list</label>
+      </div>
+
+      <div class="settings-line">
+        <label for="target">Link Target:</label>
+        <select id="target">
+          <option value="">None</option>
+          <option value="_blank">_blank</option>
+          <option value="_self">_self</option>
+          <option value="_parent">_parent</option>
+          <option value="_top">_top</option>
+        </select>
+      </div>
+
+      <button onclick="convertText()">Convert text</button><br />
+
+      <textarea
+        id="outputText"
+        rows="5"
+        cols="50"
+        placeholder="Converted HTML links will appear here..."
+      ></textarea
+      ><br />
+
+      <button onclick="copyToClipboard()">Copy to clipboard</button>
+      <script src="htmlurl.js"></script>
+    </div>
+  </body>
+</html>

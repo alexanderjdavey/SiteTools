@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Site Tools - XML to Text</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"> <h1>Site Tools</h1></a>
+      <nav>
+        <ul>
+          <li><a href="htmlurl.html">Text to HTML Links Convertor</a></li>
+          <li><a href="xmlparse.html">Sitemap URL Extractor</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="main">
+      <h2>XML to Text URL Converter</h2>
+      <textarea
+        id="inputXml"
+        rows="10"
+        cols="50"
+        placeholder="Paste your sitemap.xml content here..."
+      ></textarea
+      ><br />
+
+      <button onclick="parseXml()">Parse XML</button><br />
+
+      <textarea
+        id="outputText"
+        rows="10"
+        cols="50"
+        placeholder="URLs will appear here..."
+      ></textarea
+      ><br />
+
+      <button onclick="copyToClipboard()">Copy to clipboard</button>
+      <script src="xmlparse.js"></script>
+    </div>
+  </body>
+</html>
