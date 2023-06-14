@@ -3,16 +3,47 @@
   <head>
     <title>Site Tools</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
   </head>
   <body>
     <header>
       <a href="index.html"> <h1>Site Tools</h1></a>
       <nav>
         <ul>
-          <li><a href="htmlurl.html">Text to HTML Links Convertor</a></li>
+          <li><a href="htmlurl.html">Text to HTML Links Converter</a></li>
           <li><a href="xmlparse.html">Sitemap URL Extractor</a></li>
         </ul>
       </nav>
     </header>
+    <div id="main">
+      <div class="menu-container">
+        <div class="menu-card" onclick="location.href='htmlurl.html'">
+          <i class="fas fa-link fa-3x"></i>
+          <h2>Text to HTML Links Converter</h2>
+          <p>
+            Convert plain text URLs into HTML anchor tags with various options
+            for customization.
+          </p>
+        </div>
+
+        <div class="menu-card" onclick="location.href='xmlparse.html'">
+          <i class="fas fa-sitemap fa-3x"></i>
+          <h2>Sitemap URL Extractor</h2>
+          <p>
+            Extract all URLs from a sitemap.xml file and display them as plain
+            text.
+          </p>
+        </div>
+
+        <div class="menu-card" onclick="location.href='encode.html'">
+          <i class="fas fa-link fa-3x"></i>
+          <h2>URL Encoder / Decoder</h2>
+          <p>Encode and decode special characters for usage in URLs.</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

@@ -85,3 +85,40 @@ nav ul li a {
   color: #ecf0f1;
   text-decoration: none;
 }
+
+.menu-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 50px 0;
+}
+
+.menu-card {
+  background: #292929;
+  border-radius: 5px;
+  color: #ecf0f1;
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.menu-card:hover {
+  transform: scale(1.05);
+}
+
+.menu-card img {
+  width: 100px;
+  height: 100px;
+}
+
+.menu-card h2 {
+  margin: 20px 0;
+}
+
+.menu-card p {
+  font-size: 16px;
+}

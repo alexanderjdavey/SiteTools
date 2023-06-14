@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Site Tools</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"> <h1>Site Tools</h1></a>
+      <nav>
+        <ul>
+          <li><a href="htmlurl.html">Text to HTML Links Converter</a></li>
+          <li><a href="xmlparse.html">Sitemap URL Extractor</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="main">
+      <h3>Input</h3>
+      <textarea id="input" rows="4" cols="50"></textarea>
+
+      <button onclick="encodeURL()">Encode</button>
+      <button onclick="decodeURL()">Decode</button>
+
+      <h3>Output</h3>
+      <textarea id="output" rows="4" cols="50" readonly></textarea>
+
+      <button onclick="copyToClipboard()">Copy to Clipboard</button>
+    </div>
+    <script src="encode.js"></script>
+  </body>
+</html>
